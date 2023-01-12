@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            margin-right: 10px;
+            border: 5px solid black;
+            background-color: aqua;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            transition: width 5s ease 1s, height 5s, transform 3s;
+            border-radius: 1100px;
+            overscroll-behavior-block: contain;
+        }
+
+        .box:hover {
+            width: 250px;
+            height: 250px;
+            transform: rotate(-80deg);
+        }
+
+        p {
+            width: 200px;
+        }
+        .container{
+            display: flex;
+            margin-left: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Transition</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus fugiat aut quo ducimus cum laudantium nemo
+                laborum ratione tempore? Laborum explicabo adipisci, earum voluptatem odio harum. Itaque quo eligendi
+                voluptatibus?</p>
+        </div>
+        <div class="box">
+            <h1>Transition</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus fugiat aut quo ducimus cum laudantium nemo
+                laborum ratione tempore? Laborum explicabo adipisci, earum voluptatem odio harum. Itaque quo eligendi
+                voluptatibus?</p>
+        </div>
+        <div class="box">
+            <h1>Transition</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus fugiat aut quo ducimus cum laudantium nemo
+                laborum ratione tempore? Laborum explicabo adipisci, earum voluptatem odio harum. Itaque quo eligendi
+                voluptatibus?</p>
+        </div>
+    </div>
+</body>
+
+</html>
