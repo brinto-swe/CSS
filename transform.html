@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        .container {
+            position: relative;
+            display: flex;
+            margin-left: 400px;
+        }
+        .box-container,
+        .inner {
+            border-radius: 25px;
+            margin-right: 10px;
+            height: 150px;
+            width: 150px;
+            border: 2px solid blue;
+            background-color: yellow;
+        }
+
+        .inner {
+            border-radius: 90px;
+            background-color: red;
+            transform: translate(0px) rotate(45deg) scale(0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Transformars the End Game</h1>
+    <div class="container">
+        <div class="box-container">
+            <div class="inner"></div>
+        </div>
+        <div class="box-container">
+            <div class="inner"></div>
+        </div>
+        <div class="box-container">
+            <div class="inner"></div>
+        </div>
+    </div>
+</body>
+
+</html>
