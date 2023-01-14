@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=	">
+    <title>Animation</title>
+
+    <style>
+        h1{
+            text-align: center;
+        }
+
+        @keyframes sliding {
+              0%{
+                background-color: green;
+                left:0px;
+                top: 0px;
+              }
+              50%{
+                top: 250px;
+              }
+              100%{
+                background-color: brown;
+                left: 450px;
+                top: 0px;
+              }
+        }
+        @keyframes moving {
+            0%{
+                background-color:green;
+                left: 0px;
+                top: 200px;
+            }
+            50%{
+                top: -50px;
+            }
+            100%{
+                background-color: aqua;
+                left: 450px;
+                top: 200px;
+            }
+        }
+        .field{
+            height: 300px;
+            width: 500px;
+            border: 2px solid grey;
+            margin-left: 400px;
+            background-color: bisque;
+       }
+       .ball-1{
+        height: 50px;
+        width: 50px;
+        background-color: green;
+        border-radius: 50px;
+        position: relative;
+        animation: sliding 2s ease-in-out 0s infinite alternate;
+        animation-play-state: running;
+       }
+       .ball-2{
+        height: 50px;
+        width: 50px;
+        background-color: green;
+        border-radius: 50px;
+        position: relative;
+        animation: moving 2s ease-in-out 0s infinite alternate;
+        animation-play-state: running;
+       }
+    </style>
+</head>
+<body>
+    <h1>Let's explore animation</h1>
+    <div class="field">
+        <div class="ball-1"></div>
+        <div class="ball-2"></div>
+    </div>
+</body>
+</html>
